@@ -1,0 +1,143 @@
+@import url('https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+	--color-white: 255, 255, 255;
+	--color-black: 0, 0, 0;
+}
+
+body {
+	background-image: url('./assets/light-theme.jpg');
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+/* HEADER & FOOTER */
+
+.header {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.header,
+.footer {
+	color: rgba(var(--color-white), 1);
+	font-family: 'Amatic SC', cursive;
+	padding: 20px;
+	text-align: center;
+}
+
+.theme-light {
+	background-color: rgba(55, 137, 178, 1);
+}
+
+.theme-dark {
+	background-color: rgba(26, 53, 82, 1);
+}
+.header h1 {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	max-width: 60%;
+}
+
+.header h1 span {
+	padding: 5px;
+}
+
+.footer {
+	font-size: 1.5em;
+}
+
+.footer a,
+.footer a:active,
+.footer a:checked,
+.footer a:visited {
+	color: rgba(var(--color-white), 1);
+	margin: 5px;
+	text-decoration: none;
+}
+
+.links span:hover {
+	transform: scale(1.3);
+}
+
+/* APP */
+
+#main {
+	display: flex;
+	font-size: large;
+	font-weight: bold;
+	height: 100%;
+}
+
+.weather,
+.weather__form input {
+	background-color: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(6.5px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 5px;
+	box-shadow: 0 8px 32px 0 rgba(119, 128, 183, 0.77);
+}
+
+.weather {
+	height: fit-content;
+	margin: 35px auto;
+	width: 80%;
+}
+
+/* WEATHER FORM */
+
+.weather__form {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 25px 0;
+	text-align: center;
+}
+
+.weather__form input {
+	border: none;
+	color: rgba(var(--color-black), 1);
+	height: 30px;
+	margin: 15px 0 30px 0;
+	min-width: 70px;
+	text-align: center;
+	width: 250px;
+}
+
+.weather__form-buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+.weather__form button {
+	border-radius: 25px;
+	border: none;
+	color: rgba(var(--color-white), 1);
+	flex: 1;
+	padding: 15px;
+	margin: auto 15px;
+	text-align: center;
+	width: 150px;
+}
+
+/* WEATHER DISPLAY */
+
+.weather__results {
+	background-color: rgba(27, 128, 191, 0.75);
+	backdrop-filter: blur(6.5px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 5px;
+	box-shadow: 0 8px 32px 0 rgba(119, 128, 183, 0.77);
+	color: rgba(var(--color-white), 1);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto 25px;
+	padding: 25px 10px;
+	text-align: center;
+	width: fit-content;
+}

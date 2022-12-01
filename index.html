@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/0d5fb0cdfc.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>Matrice Project - Weather Forecast</title>
+	</head>
+
+	<body>
+		<header id="header" class="header theme-light theme__bgColor">
+			<h1 class="header__title">
+				<span class="fa-solid fa-sun header__title-icon"></span>
+				Weather App
+				<span class="fa-solid fa-sun header__title-icon"></span>
+			</h1>
+		</header>
+		<span id="heure"></span>
+
+		<main id="main">
+			<section class="weather section">
+				<article class="weather__form">
+					<form>
+						<label for="input-city"> Check the weather in... </label><br />
+						<input
+							id="input-city"
+							placeholder="Enter your city"
+							name="input-city"
+							type="text"
+							required
+						/>
+
+						<div class="weather__form-buttons">
+							<button
+								id="submit"
+								type="submit"
+								value="Check my city"
+								class="theme__bgColor theme-light"
+							>
+								TODAY
+							</button>
+							<button class="theme__bgColor theme-light" id="submit-week">
+								THIS WEEK
+							</button>
+						</div>
+					</form>
+				</article>
+
+				<article class="weather__display">
+					<div class="weather__display-results weather__results">
+						Your result here
+					</div>
+				</article>
+
+				<aside></aside>
+			</section>
+		</main>
+		<footer id="footer" class="footer theme-light theme__bgColor">
+			<p> Une application créée par Sarah DELMAS © 2022</p>
+
+			<div class="links">
+				<a
+					href="https://github.com/Ikescd"
+					target="_blank"
+					class="links-github"
+				>
+					<span class="fa-brands fa-square-github"></span>
+				</a>
+
+				<a
+					href="https://www.linkedin.com/in/sarah-delmas/"
+					target="_blank"
+					class="links-linkdin"
+				>
+					<span class="fa-brands fa-linkedin"></span>
+				</a>
+			</div>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
